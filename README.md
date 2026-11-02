@@ -81,10 +81,10 @@ supabase-rls-secrets-audit/
 ### Agent Skills (Preferred)
 
 ```bash
-npx skills add emcahell/frontend-anti-tech-debt-skill
+npx skills add emcahell/supabase-rls-audit
 ```
 
-This installs to `.agents/skills/frontend-anti-tech-debt/SKILL.md`.
+This installs to `.agents/skills/supabase-rls-audit/SKILL.md`.
 
 Alternatively, copy the folder manually. A skill is a folder with `SKILL.md`. Copy the folder (named `supabase-rls-secrets-audit`) into the skills location of your agent. The paths below come from each agent's documentation (see `SOURCES.md`). **The copy commands have not been run against the agents.**
 
