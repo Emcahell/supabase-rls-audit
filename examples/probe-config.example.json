@@ -1,0 +1,11 @@
+{
+  "tables": [
+    {"name": "profiles", "expect": "DENY", "seed_expected": true, "select": "id"},
+    {"name": "notes", "expect": "DENY", "seed_expected": true, "select": "id",
+     "insert_payload": {"body": "audit-probe-marker"}},
+    {"name": "invoices", "expect": "DENY", "select": "id"},
+    {"name": "notes", "role": "authenticated", "expect": "ALLOW", "seed_expected": true, "select": "id"}
+  ],
+  "rpc": [{"name": "promote_user", "args": {}, "expect": "DENY"}],
+  "storage": [{"bucket": "avatars", "expect": "DENY"}]
+}
